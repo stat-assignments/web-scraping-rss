@@ -1,0 +1,29 @@
+---
+title: "Web Scraping TILT Information"
+format: html
+---
+
+## Purpose
+
+In this assignment, you will decode file formats that are XML-based, pulling out relevant information programmatically and implementing quality-control measures for that data.
+The techniques you practice here may be applied to pull data out of documents with common formats, map data, and other information provided online, as XML and HTML documents are involved in *everything* online. 
+
+### Skills
+
+This assignment will help you practice the following skills which are important for being able to access and work with data:
+
+- Reading and using XML data schemas
+- Developing strategies to extract data from an XML document using XPATH and CSS selectors
+- Extracting data from XML-coded documents
+- Reformatting and tidying extracted data into a form that is workable for statistical analysis
+- Implementing quality control measures for data assembled from sources which are not always completely consistent
+
+### Knowledge
+
+This assignment will help you to become familiar with important knowledge in this discipline:
+
+- XML data formats
+- Tidy data formats
+- Functional programming techniques
+- Computational time considerations for different strategies for data extraction
+- File access time considerations for different data extraction strategies
