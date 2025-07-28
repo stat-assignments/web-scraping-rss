@@ -16,7 +16,7 @@ An example of the RSS feed downloaded on July 28, 2025 is provided in the [`samp
 RSS feeds are just another XML-like file, as you can see from the [RSS2.0 Specification](https://www.rssboard.org/rss-specification). 
 
 ::: callout
-You can see the purpose of this assignment as well as the skills and knowledge you should be using and acquiring, in the [Transparency in Learning and Teaching](tilt.qmd) document in this repository.
+You can see the purpose of this assignment as well as the skills and knowledge you should be using and acquiring, in the [Transparency in Learning and Teaching (TILT)](tilt.qmd) document in this repository. The TILT document also contains a checklist for self-reflection that will provide some guidance as to how the assignment will be graded. 
 :::
 
 # Warming Up
@@ -105,13 +105,14 @@ Open one link from your table and examine the HTML page.
 ## Reading HTML Tables
 
 Write a function that takes a URI to the Filing Detail page and extracts the link for the document corresponding to the filing entry (I recommend going for the .htm link).
+Use your function to obtain the HTML addresses of the filed forms for all of the links in your RSS feed.
 
-Use your function to obtain the filed forms for all of the links in your RSS feed.
 ---
+
 
 ## Reading HTML Pages
 
-Use the links to the filed forms and extract the following information from each page:
+Use the links to the filed forms and extract the following information from each page, storing the information for each form in a data frame. 
 
 - Name, SEC File Number, Address, and Phone Number of Issuer
 - Name of person selling the securities, and relationship to the Issuer
@@ -142,6 +143,6 @@ Describe how you would approach generating a database of the unique form 144 fil
 
 Your solution should minimize the amount of load on the SEC's server both because it minimizes the running time of the code and because it's more polite.
 
-Calculate the total number of calls you have to make to the SEC's server to implement your solution. 
+Calculate the total number of calls you have to make to the SEC's server to implement your solution, showing your work. 
 
 ---
