@@ -3,7 +3,7 @@ title: "Lab: Web Scraping and RSS"
 author: "Your Name Here"
 format: html
 number-sections: true
-number-depth: 3
+number-depth: 2
 ---
 
 The Securities and Exchange Commission (SEC) provides a way to see the most recent filings submitted to the commission at [https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent](https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent). 
@@ -140,6 +140,8 @@ The SEC may not receive more than 100 form 144 filings each day, and they do not
 
 Describe how you would approach generating a database of the unique form 144 filings over all 30 days of RSS feed files. Make an ordered list of steps indicating the order in which you would read in the RSS entries, acquire the corresponding data from the SEC filing form, and deduplicating the potentially repeated filings, along with any other intermediate steps you might take.
 
-Your solution should minimize the amount of load on the SEC's server for both efficiency and politeness' sake. 
+Your solution should minimize the amount of load on the SEC's server both because it minimizes the running time of the code and because it's more polite.
+
+Calculate the total number of calls you have to make to the SEC's server to implement your solution. 
 
 ---
