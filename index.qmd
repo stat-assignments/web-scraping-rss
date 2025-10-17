@@ -10,7 +10,7 @@ The Securities and Exchange Commission (SEC) provides a way to see the most rece
 
 Form 144 is required to be submitted when an executive officer, director, or affiliate of the company sells more than 5000 shares of stock or the aggregate sales price exceeds $50,000. 
 
-Conveniently, we can access the 100 most recent Form 144 filings by using the [RSS feed](https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent&CIK=&type=&company=&dateb=&owner=include&start=0&count=100&output=atom), which provides some basic information about each filing as well as a link to the filing's database entry. 
+Conveniently, we can access the 100 most recent Form 144 filings by using the [RSS feed](https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent&CIK=&type=144&company=&dateb=&owner=include&start=0&count=100&output=atom), which provides some basic information about each filing as well as a link to the filing's database entry. 
 An example of the RSS feed downloaded on July 28, 2025 is provided in the [`sample-feed.rss`](sample-feed.rss) file for demonstration purposes. 
 
 RSS feeds are just another XML-like file, as you can see from the [RSS2.0 Specification](https://www.rssboard.org/rss-specification). 
