@@ -26,6 +26,33 @@ You can see the purpose of this assignment as well as the skills and knowledge y
 Add a code chunk that will read in the RSS feed as an XML file.
 
 ---
+```{r}
+library(xml2)
+library(rvest)
+library(tidyverse)
+
+doc <- read_xml("sample-feed.rss")
+xml_find_first(doc, "//d1:entry")
+
+tmp <- xml_children(doc) |> map(xml_contents)
+
+tmpindex <- map_int(tmp,length)
+
+tmp <- tmp[tmpindex==6]
+
+parse_entries <- function(node) {
+  var_names <- map_chr(node, xml_name)
+  var_values <- map_chr(node, xml_text)
+  
+  res <- as_tibble(t(var_values)) |>
+    set_names(var_names) |>
+    mutate(link = xml_attr(node[[2]], "href"),
+           category = xml_attrs(node[[5]]) |> t() |> as_tibble()) |>
+    unnest_wider(category)
+}
+
+tmpdf <- map_dfr(tmp, parse_entries)
+```
 
 
 ## Extracting Information {#sec-extract-info}
